@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF;
+  }
+  
+  /*  Navbar  */
+  
+  
+  #navbar{
+    position:fixed;
+    display:flex;
+    z-index: 2;
+    width: 100%;
+    height: 75px;
+    padding: 0px 30px;
+    background-color: none;
+    border-bottom: 1px solid #FFFFFF;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .name{
+    font-weight: 500;
+    font-size: 25px;
+  }
+  
+  .nav{
+    display: flex;
+    align-items: center;
+  }
+  .nav-links{
+    padding: 0px 15px;
+  }
+  .nav-links a{
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 18px;
+  }
+  
+  
+  /*  Welcome  */
+  
+  
+  #welcome-section{
+    background: url(https://res.cloudinary.com/dibvnvdtt/image/upload/v1531660636/Images/business-computer-connection.jpg) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color:#FFFFFF;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #welcome-section .hi{
+    font-weight: 400;
+    font-size: 20px;
+  }
+  #welcome-section h1{
+    padding-top: 40px;
+    font-weight: 600;
+    font-size: 40px;
+  }
+  #welcome-section i{
+  position: absolute;
+  bottom: 50px;
+  font-size: 30px;
+  }
+  
+  
+  /* About me  */
+  
+  
+  #about_me{
+    width:100%;
+    background: linear-gradient(#292935,#555668);
+    border-bottom: 1px solid #FFFFFF;
+    text-align: center;
+  }
+  #about_me h1{
+    padding: 15px;
+    font-size: 35px;
+    font-weight: 300;
+  }
+  #about_me p{
+    text-align: justify;
+    width:70%;
+    margin: 0px auto;
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  
+  .languages{
+    width:300px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(50px,100px));
+    grid-gap: 15px;
+  }
+  .languages i{
+    font-size: 50px;
+    padding: 10px;
+  }
+  
+  
+  /*  Projects  */
+  
+  
+  #projects{
+    background: linear-gradient(#555668,#766DFB);
+    border-bottom: 1px solid #FFFFFF;
+    text-align: center;
+  }
+  #projects h1{
+    padding: 15px;
+    font-size: 35px;
+    font-weight: 300;
+  }
+  .center{
+    max-width: 1020px;
+    margin:auto;
+    margin-bottom: 50px;
+  }
+  .container{
+    display: grid;
+    margin: 0 auto;
+    width :90%;
+    margin-top: 35px;
+    grid-template-columns: repeat(2, minmax(100px,500px));
+    grid-template-rows: repeat(2, fr1);
+    grid-gap: 20px;
+  }
+  .project-tile{
+      border: 2px solid #FFFFFF;
+      position: relative;
+      top:1;
+  }
+  .container img{
+    max-width: 100%;
+    min-height: 100%;
+  }
+  
+  .overlay{
+    background-color: rgba(0,0,0,0.85);
+    width: 100%;
+    height:0%;
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+    opacity:0;
+    transition:all .3s ease;
+  }
+  .overlay p{
+    padding: 5%;
+    padding-top: 15%;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 200;
+    font-size: 20px;
+  }
+  .overlay input[type="submit"]{
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding:5%;
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 5%;
+    left:25%;
+  
+  }
+  .overlay input[type="submit"]:hover{
+    border: 1px solid white;
+  }
+  .project-tile:hover .overlay{
+    opacity:1;
+    height:100%;
+  }
+  
+  
+  /*  Contact  */
+  
+  
+  #contact{
+    background: linear-gradient(#766DFB,#4FC3DE);
+  }
+  #contact h1{
+    padding: 15px;
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .contact_form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: transparent;
+    width:70%;
+    margin: 0px auto;
+  }
+  .input_name, .input_email, .input_comment{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color:white;
+    outline: none;
+    padding:15px;
+    font-size: 15px;
+    width:90%;
+  }
+  .input_name::placeholder, .input_email::placeholder, .input_comment::placeholder{
+    color:white;
+  }
+  
+  .input_comment{
+    margin-top: 20px;
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+  .input_button{
+    grid-column: 1/3;
+    grid-row: 3;
+    width: 125px;
+    padding: 10px;
+    border: none;
+    margin: 40px auto;
+    background-color: white;
+    color:#4FC3DE;
+  }
+  .input_button i{
+    color:#4FC3DE;
+  }
+  
+  
+  /*  Media  */
+  
+  
+  .media{
+    padding: 40px 60px;
+    font-size: 50px;
+    background-color:#4FC3DE;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .media a{
+    margin: 0px 25px;
+    cursor: pointer;
+      
+
+  }
+  .media i:hover{
+    color:#766DFB;
+  }
+  
+  
+  /*  Footer  */
+  
+  
+  .copyright{
+    background-color:#4FC3DE;
+    text-align: center;
+    padding:40px 20px 20px 20px;
+    font-size: 20px;
+  }
+  
+  
+  /*  Media  */
+  
+  
+  @media only screen and (max-width: 768px){
+    #navbar{
+      display:block;
+      padding: 0;
+    }
+    .name{
+      text-align: center;
+      margin: 0px auto;
+    }
+    .nav{
+      padding-top: 5px;
+      width:100%;
+      justify-content: center;
+    }
+    .overlay p{
+      padding: 5%;
+      font-size: 15px;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 480px){
+    .container{
+      grid-template-columns: repeat(1, minmax(100px,500px));
+    }
+    .contact_form{
+      grid-template-columns: none;
+      grid-template-rows: repeat(4,1fr);
+      width:100%;
+      margin-left: 5%;
+    }
+    .input_name, .input_email, .input_comment{
+      padding: 0px;
+      margin: auto 0px;
+    }
+  
+    .input_comment{
+      height: 75px;
+      grid-column: 1;
+      grid-row: 3;
+    }
+    .input_button{
+      grid-column: 1;
+      grid-row: 4;
+      width:90%;
+      margin: auto 0px;
+    }
+  
+  }
+  
